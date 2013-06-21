@@ -1,4 +1,4 @@
-estoque_controle<br>
+estoque_controle1.0<br>
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br>
 Sistema academico de Controle de Estoque em PHP OO, MVC, MySQL, JQuery/AJAX.<br>
 Esse sistema foi desenvolvido utilizando PHP 5.0 seguindo as melhores práticas da Orientação à Objetos e alguns Padrões de Projeto como MVC, DAO e FACTORY.<br>
