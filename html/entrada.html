@@ -1,0 +1,89 @@
+<div id="labelProdutos">
+	<a href="javascript:void(0)" onclick="$('#form_produtos').slideToggle('slow')">Consultar Estoque</a>
+</div>
+<form id="form_produtos">
+    <table id="tabelaProdutos" cellpadding="0" cellspacing="0" summary="Tabela Produtos">
+        <thead><tr class='cabecalho'></tr></thead>
+        <tfoot><tr class='rodape'></tr></tfoot>
+        <tbody></tbody>
+    </table>
+</form>
+<form id="form_entrada">
+	<div id="opcoesout">
+    <div id="opcoesin">
+        <div id="pesquisa">
+        	<div id="pesquisaSelect">
+                <select name="srccampo" id="srccampo" onChange="Entradas.exibeFiltro(this.value)">
+                    <option value="0">Filtrar por</option>
+                    <option value="codigo">Código</option>
+                    <option value="periodo">Período</option>
+                    <option value="fornecedor">Fornecedor</option>
+                </select>
+            </div>
+            <div id="pesquisaInput">
+            	<div id="pesquisaInputCodigo">
+                    <select name="srccod" id="srccod">
+                        <option value="0">Selecionar Código</option>
+                    </select>
+                </div>
+            	<div id="pesquisaInputFornecedor">
+                    <select name="srcforn" id="srcforn">
+                        <option value="0">Selecionar Fornecedor</option>
+                    </select>
+                </div>
+                <div id="pesquisaInputData">
+                    <div class="pesquisaInputDataImput">
+                        <input name="dtini" id="dtini" type="text" maxlength="100">
+                    </div>
+                    <div class="pesquisaInputDataImput">
+                        <input name="dtfim" id="dtfim" type="text" maxlength="100">
+                    </div>
+                </div>
+            </div>
+            <div id="pesquisaBt">
+                <a href="#" onclick="Entradas.consultar()">Consultar</a>
+            </div>
+            <div id="pesquisaBt">
+                <a href="#" onclick="Entradas.listarEntradas()">Listar Todas</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <table id="tabelaEntrada" cellpadding="0" cellspacing="0" summary="Tabela Entrada">
+        <thead><tr class='cabecalho'></tr></thead>
+        <tfoot><tr class='rodape'></tr></tfoot>
+        <tbody></tbody>
+    </table>
+</form>
+<div id='popUp'>
+    <h1>Nova Entradas</h1>
+    <span class="close" onclick="Entradas.fechaPopUp()">X</span>
+    <div id='popUpBody'>
+        <form id="popUpForm">
+            <label for="codigo">Código</label>
+            <input type="text" class="cod" name="codigo" id="codigo" readonly="readonly" value="*" />
+            <br /><br />
+            <label for="data">Data</label>
+            <input type="text" name="data" id="data" class="data" />
+            <br /><br />
+            <label for="fornecedor">Fornecedor</label>
+            <select name="fornecedor" id="fornecedor">
+                <option value="0">Selecione um fornecedor</option>
+            </select>
+            <br /><br />
+            <label for="produto">Produto</label>
+            <select name="produto" id="produto">
+                <option value="0">Selecione um produto</option>
+            </select>
+            <br /><br />
+            <label for="qtde">Quantidade</label>
+            <input type="text" name="qtde" id="qtde" />
+                        
+            <a href="#" onclick="Entradas.cadastrar()">Cadastrar</a>
+            <a href="#" onclick="Entradas.atualizar()">Atualizar</a>
+            <a href="#" onclick="Entradas.fechaPopUp()">Cancelar</a>
+        </form>
+    </div>
+    <span id="msg"></span>
+</div>
+<div id='popUpBg' onclick="Entradas.fechaPopUp()"></div>

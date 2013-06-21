@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*@import url("_main.css");*/
+
+table{width:860px; background:#fff; border:1px solid #fff;}
+thead{width:860px; height:25px; font-weight:bold; background:#E1E1E1;}
+tfoot{width:860px; height:25px; font-weight:bold; background:#E1E1E1;}
+tbody{width:860px; height:25px;}
+/*tbody tr:hover>td{background:#F60; color:#FFF;}*/
+
+.linhaSelecionada{background:#6C9;}
+.linha:hover{background:#FFF; color:#000;}
+
+tr.cabecalho{width:860px; height:25px; font-weight:bold; background:#E1E1E1;}
+tr.rodape{width:860px; height:25px;}
+tr.rodape>td{border-top:1px solid #FFF;}
+
+th.cab_cod{width:60px;   text-align:center; border-right:1px solid #fff;}
+th.cab_nome{width:140px;  text-align:center; border-right:1px solid #fff;}
+th.cab_controle{width:250px; text-align:center;}
+
+td.cod{  width:60px;  height:25px; border-right:1px solid #fff; text-align:center;}
+td.nome{ width:370px; height:25px; border-right:1px solid #fff; padding-left:20px;}
+td.nivel{width:50px;  height:25px; border-right:1px solid #fff; text-align:center;}
+/*------------------------------------------------------------------------------------*/
+td.habil   {width:25px; height:23px; padding:2px 0px 0px 20px; border-right:1px solid #fff;}
+td.habil  a{text-decoration:none; color:#030;}
+
+td.botao1  {width:35px; height:23px; border-right:1px solid #fff; padding:2px 0px 0px 10px;}
+td.botao1 a{text-align:center; text-decoration:none; color:#06F;}
+
+td.botao2  {width:35px; height:23px;  padding:2px 0px 0px 10px;}
+td.botao2 a{text-decoration:none; color:#06F;}
+/*------------------------------------------------------------------------------------*/
+.botao_novo{width:200px; height:23px; border-left:1px solid #FFF; padding:2px 0px 0px 41px;}
+.botao_novo a{text-decoration:none; color:#06F;}
+/*------------------------------------------------------------------------------------*/
+.aviso{ border: thin solid black; font-size: 12pt; font-weight:bold; color: #000000; background-color: #FFFF00; }
+
+/*--- PopUp -*/
+#popUp{width:360px; height:320px; position:absolute; background:#CCC; border:3px solid #aaa; display:none; z-index:1; top:200px; left:500px;}
+#popUp h1{width:334px; height:22px; float:left; background:#aaa; position:relative; padding:2px 0px 0px 5px;}
+#popUp span.close{width:15px; height:20px; float:left; position:relative; background:#333; color:#fff; padding:4px 0px 0px 6px; cursor:pointer;}
+#popUpBg{width:100%; height:100%; position:absolute; overflow:hidden; background:rgba(0, 0, 0, 0.7); display:none; border:none; top:0px; left:0px;}
+
+#popUpBody{width:330px; height:250px; float:left; padding:0px 0px 0px 30px; /* background:#0F0; */}
+#popUpBody form{width:300px; height:230px; float:left; padding-top:20px;  /*background:#690; */}
+#popUpBody form label{ width:50px; height:20px; float:left; padding:4px 0px 0px 5px; /* background:#00F; */
+					   border-left:1px solid #ddd; border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
+#popUpBody form input{ width:230px; height:26px; float:left; padding-left:10px;}
+#popUpBody form select{ width:240px; height:26px; float:left; padding-left:10px;}
+
+#popUpBody a{width:77px; height:19px; float:left; text-decoration:none; text-align:center; background:#999; margin:15px 15px 0px 0px; padding-top:2px;}
+
+#popUp span#msg{width:330px; height:35px; float:left; padding:5px 0px 0px 30px; font-size:12px; color:#F00;  /*background:#FF0; */}
+/*--- PopUp -*/

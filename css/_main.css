@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document - Main*/
+
+*{margin:0; padding:0; border:none; font-family:Verdana; font-size:13px;}
+body{width:100%; height:100%; background:#e6e6e6;}
+
+#main{width:100%; min-height:600px; margin:0 auto; /*background:#CCC;*/}
+#topo{width:100%; height:157px; float:left; background:url(../imagens/fxTopo.jpg) repeat-x;}
+#topo_logo{width:275px; height:132px; float:left; padding:25px 0px 0px 55px;}
+#topo_logo img{width:228px; float:left;}
+
+#topo_logo a{width:269px; height:72px; float:left;}
+#topo_logo span{width:262px; height:25px; float:left; color:#91d2f0; text-align:left; padding:3px 0px 0px 3px;
+				font-size:15px; font-family:Tahoma, Geneva, sans-serif; letter-spacing:3px;}
+
+#logo_empresa{width:280px; height:150px; float:right; padding-top:20px;}
+#logo_empresa img{width:165px; height:80px; float:right;}
+
+#topo_status_menu{width:575px; height:150px; float:left;}
+
+#topo_status{width:575px; height:25px; float:left; padding:41px 0px 0px 0px;}
+#topo_status span{width:557px; height:16px; float:left; color:#bababa; font-size:10px; padding:3px 0px 0px 18px; background:#333;}
+
+#topo_menu{width:575px; height:75px; float:left;}
+#topo_menu ul{width:575px; height:18px; float:left;}
+
+#topo_menu ul li.bt1 a{width:90px; height:16px; text-decoration:none; color:#bababa; font-size:10px; padding-top:2px;}
+#topo_menu ul li.bt1 a:hover{color:#fff;}
+
+#topo_menu ul li.bt1{width:90px; height:18px; float:left; display:inline; text-decoration:none; list-style:none; color:#bababa; font-size:10px; text-align:center;
+					 cursor:pointer;}
+#topo_menu ul li.bt1:hover{color:#fff;}
+
+#topo_menu ul li.bt2{width:100px; height:75px; float:left; list-style:none; text-align:center;}
+#topo_menu ul li.bt2 .bt2_label{width:100px; height:16px; float:left; list-style:none; text-align:center; color:#bababa; font-size:10px; padding-top:2px; cursor:pointer;}
+#topo_menu ul li.bt2 .bt2_label:hover{color:#fff;}
+
+#topo_menu ul li.bt2 .bt_sub{width:100px; min-height:0.5px; float:left; list-style:none; text-align:center; display:none; background:#333; border:1px solid #999;}
+#topo_menu ul li.bt2 .bt_sub a{width:100px; height:16px; float:left; text-decoration:none; color:#bababa; font-size:10px; padding-top:2px; border-bottom:1px solid #555;}
+#topo_menu ul li.bt2 .bt_sub a:hover{color:#fff;}
+
+#topo_menu ul li.sep{width:5px; height:18px; float:left; color:#bababa; display:inline;}
+
+#content{width:100%; min-height:400px; float:left; padding-top:5px; overflow:hidden;}
+#content_label{width:100%; height:32px; float:left; background:#f4f4f4; border-top:1px solid #d4d4d4; border-bottom:1px solid #d4d4d4;}
+#label{width:275px; height:24px; float:left; padding:8px 0px 0px 55px; font-weight:bold;}
+#avisos{width:520px; height:24px; float:left; padding:8px 0px 0px 55px; font-weight:bold; background:#FFF; display:none;}
+
+#conteudo{width:100%; min-height:10px; float:left; padding:10px 0px 30px 55px; border-bottom:1px dotted #bbb;}

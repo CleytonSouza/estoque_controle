@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>CONTROLE DE ESTOQUE - SISCOM</title>
+        
+        <link href="css/_login.css" rel="stylesheet" type="text/css" />
+        <script src="../_jquery/jquery-1.8.0.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript" ></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="topo">
+            	<div id="topo_logo">
+                    <img src="imagens/logo.jpg" alt="logo" />
+                    <span>CONTROLE DE ESTOQUE</span>
+                </div>
+            </div>
+            <div id="content">
+                <div id="content_label">
+                	<div id="label"></div>
+                </div>
+                <div id="formLogin">
+                    <form action="login.php" name="frmlogin" id="frmlogin" onSubmit="Login.auth(this.login.value,this.senha.value); return false">
+                        <div class="formLoginLabel">Login: <span>( Utilize Login e Senha: "user1" )</div>
+                        <div class="formLoginImput">
+                        	<input name="login" type="text" id="login" size="20" maxlength="15" value="">
+                        </div>
+                        <div class="formLoginLabel">Senha:</span></div>
+                        <div class="formLoginImput">
+                        	<input name="senha" type="password" id="senha" size="20" maxlength="15" value="">
+                        </div>
+                        <br />
+                        <div id="formLoginSubmit">
+                        	<div id="formLoginSubmitImg"><img src='imagens/ajax-loader.gif' alt='Loading' /></div>
+                        	<div id="formLoginSubmitButtom"><input type="submit" name="submit" value="Ok"></div>
+                        </div>
+                    </form>
+                    <div id="alerta"></div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--- Busca -*/
+#opcoesout{width:858px; height:48px; float:left; margin:5px 0px 5px 0px; border:1px solid #cbcbcb;}
+#opcoesin{width:856px; height:46px; float:left; border:1px solid #fff;}
+
+#pesquisa{width:850px; height:46px; float:left; /*background:#00F;*/}
+
+#pesquisaSelect{width:105px; height:33px; float:left; padding:13px 0px 0px 13px; /*background:#F00;*/}
+#pesquisaSelect select{width:100px; height:22px; float:left;
+							 border-right:1px solid #ddd; border-bottom:1px solid #ddd; 
+							 border-top:1px solid #ccc; border-left:1px solid #ccc;}
+
+#pesquisaInput{min-width:160px; height:33px; float:left; /*background:#060;*/}
+
+#pesquisaInputCodigo{width:200px; height:33px; float:left; padding:13px 0px 0px 7px; display:none; /*background:#930;*/ }
+#pesquisaInputCodigo select{width:190px; height:22px; float:left;
+						 	border-right:1px solid #ddd; border-bottom:1px solid #ddd; 
+						 	border-top:1px solid #ccc; border-left:1px solid #ccc;}
+							
+#pesquisaInputFornecedor{width:200px; height:33px; float:left; padding:13px 0px 0px 7px; display:none; /*background:#930;*/ }
+#pesquisaInputFornecedor select{width:190px; height:22px; float:left;
+							 	border-right:1px solid #ddd; border-bottom:1px solid #ddd; 
+							 	border-top:1px solid #ccc; border-left:1px solid #ccc;}
+
+#pesquisaInputCliente{width:200px; height:33px; float:left; padding:13px 0px 0px 7px; display:none; /*background:#930;*/ }
+#pesquisaInputCliente select{width:190px; height:22px; float:left;
+							 	border-right:1px solid #ddd; border-bottom:1px solid #ddd; 
+							 	border-top:1px solid #ccc; border-left:1px solid #ccc;}
+
+#pesquisaInputData{width:360px; height:33px; float:left; padding:13px 0px 0px 15px; display:none; /*background:#F00;*/}
+.pesquisaInputDataImput{width:180px; height:33px; float:left; /*background:#F00;*/}
+.pesquisaInputDataImput input{width:150px; height:20px; float:left; 
+						      border-right:1px solid #ddd; border-bottom:1px solid #ddd; 
+					          border-top:1px solid #ccc; border-left:1px solid #ccc;}
+							
+#pesquisaBt{width:105px; height:33px; float:left; padding:13px 0px 0px 5px; /*background:#F00;*/}
+#pesquisaBt input{width:100px; height:22px; float:left; background:#d4d4d4; cursor:pointer;
+	  					     border-left:1px solid #ddd; border-top:1px solid #ddd; 
+					         border-bottom:1px solid #ccc; border-right:1px solid #ccc;}
+
+#pesquisaBt a{width:100px; height:19px; float:left; background:#d4d4d4; cursor:pointer; text-align:center; text-decoration:none; padding-top:3px;
+	  					     border-left:1px solid #ddd; border-top:1px solid #ddd; 
+					         border-bottom:1px solid #ccc; border-right:1px solid #ccc;}
+
+/* barra de status */
+#bar_status{width:832px; height:20px; float:left; padding:5px 0px 0px 18px; font-size:11px;
+			background:url(../imagens/bg_table_labels.jpg) repeat-x; border:1px solid #617082;}
+#msg{width:500px; height:15px; float:left; font-size:11px;}
+#msg_tot{width:190px; height:15px; float:right; font-size:11px; text-align:center; padding-top:2px;}
+
+/*--- Busca -*/

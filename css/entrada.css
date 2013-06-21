@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*@import url("_main.css");*/
+@import url("_busca.css");
+
+.linhaSelecionada{background:#6C9;}
+.linha:hover{background:#FFF; color:#000;}
+.cancelado{ color:#F00; text-align:center; }
+
+form#form_entrada{width:860px; float:left;}
+
+/* Entradas ------------------------------------------------------------------------------------*/
+table#tabelaEntrada{width:860px; background:#fff; border:1px solid #fff;}
+table#tabelaEntrada thead{width:860px; height:25px; font-weight:bold; background:#E1E1E1;}
+table#tabelaEntrada tfoot{width:860px; height:25px; font-weight:bold; background:#E1E1E1;}
+table#tabelaEntrada tbody{width:860px; height:25px;}
+
+table#tabelaEntrada thead tr.cabecalho{width:860px; height:25px; font-weight:bold; background:#E1E1E1;}
+table#tabelaEntrada tfoot tr.rodape{width:860px; height:25px;}
+table#tabelaEntrada tfoot tr.rodape>td{border-top:1px solid #FFF;}
+
+table#tabelaEntrada th.cab_cod{     width:10%; text-align:center; border-right:1px solid #fff;}
+table#tabelaEntrada th.cab_data{    width:15%; text-align:center; border-right:1px solid #fff;}
+table#tabelaEntrada th.cab_fornec{  width:25%; text-align:center; border-right:1px solid #fff;}
+table#tabelaEntrada th.cab_produto{ width:20%; text-align:center; border-right:1px solid #fff;}
+table#tabelaEntrada th.cab_qtde{    width:10%; text-align:center; border-right:1px solid #fff;}
+table#tabelaEntrada th.cab_controle{width:10%; text-align:center;}
+
+table#tabelaEntrada td.cod{    width:10%; height:25px; border-right:1px solid #fff; text-align:center;}
+table#tabelaEntrada td.data{   width:10%; height:25px; border-right:1px solid #fff; text-align:center;}
+table#tabelaEntrada td.fornec{ width:25%; height:25px; border-right:1px solid #fff; padding-left:20px;}
+table#tabelaEntrada td.produto{width:20%; height:25px; border-right:1px solid #fff; padding-left:20px;}
+table#tabelaEntrada td.produto span{display:none;}
+table#tabelaEntrada td.qtde{   width:10%; height:25px; border-right:1px solid #fff; text-align:center;}
+
+td.habil{width:35px; height:23px; text-align:center; padding:2px 0px 0px 15px; border-right:1px solid #fff;}
+td.botao1{width:100px; border-right:1px solid #fff; padding-left:49px; text-align:center; }
+td.botao2{width:50px;}
+/*------------------------------------------------------------------------------------*/
+td.habil  a{width:17px; height:17px; float:left; text-decoration:none; color:#030;}
+td.botao1 a{float:left; text-align:center; text-decoration:none; color:#06F;}
+td.botao2 a{width:70px; height:18px; float:left; text-align:center; text-decoration:none; color:#06F;}
+/*------------------------------------------------------------------------------------*/
+.botao_novo{width:150px; height:25px; border-left:1px solid #FFF;}
+.botao_novo a{width:150px; height:20px; float:left; text-align:center; text-decoration:none; padding-top:5px; color:#06F;}
+/*------------------------------------------------------------------------------------*/
+.aviso{ border: thin solid black; font-size: 12pt; font-weight:bold; color: #000000; background-color: #FFFF00; }
+/*------------------------------------------------------------------------------------*/
+
+/* Produtos ------------------------------------------------------------------------------------*/
+
+#labelProdutos{width:840px; height:21px; background:#acd; border:1px solid #fff; padding:4px 10px 0px 10px;
+  			   font-weight:bold; color:#000; text-align:right;}
+#labelProdutos a{float:right; text-decoration:none; color:#000; font-size:13px; font-weight:bold; }
+
+form#form_produtos{ display:none; }
+
+table#tabelaProdutos{width:860px; background:#fff; border:1px solid #FFF; border-top:none;}
+table#tabelaProdutos thead{width:860px; height:25px; display:block; font-weight:bold; background:#E1E1E1;}
+table#tabelaProdutos tfoot{width:860px; height:25px; font-weight:bold; background:#E1E1E1;}
+table#tabelaProdutos tbody{width:860px; height:120px; display:block; overflow:auto;}
+
+table#tabelaProdutos thead tr.cabecalho{width:860px; height:25px; font-weight:bold; background:#acd;}
+table#tabelaProdutos tfoot tr.rodape{width:860px; height:25px; background:#acd;}
+table#tabelaProdutos tfoot tr.rodape>td{border-top:1px solid #FFF;}
+
+table#tabelaProdutos th.cab_cod{  width:60px;  text-align:center; border-right:1px solid #fff;}
+table#tabelaProdutos th.cab_nome{ width:478px; text-align:center; border-right:1px solid #fff;}
+table#tabelaProdutos th.cab_preco{width:150px; text-align:center; border-right:1px solid #fff;}
+table#tabelaProdutos th.cab_qtde{ width:150px; text-align:center;}
+table#tabelaProdutos th.cab_controle{width:210px; text-align:center;}
+
+table#tabelaProdutos td.cod{  width:60px;  height:25px; border-right:1px solid #fff; text-align:center;}
+table#tabelaProdutos td.nome{ width:458px; height:25px; border-right:1px solid #fff; text-align:left; padding-left:20px; }
+table#tabelaProdutos td.preco{width:130px; height:25px; border-right:1px solid #fff; text-align:right; padding-right:20px; }
+table#tabelaProdutos td.qtde{ width:150px; height:25px; border-right:1px solid #fff; text-align:center;}
+/*------------------------------------------------------------------------------------*/
+
+/*--- PopUp -*/
+#popUp{width:500px; height:300px; position:absolute; background:#CCC; border:3px solid #aaa; display:none; z-index:1; top:100px; left:230px; /*background:#00F;*/}
+#popUp h1{width:474px; height:22px; float:left; background:#aaa; position:relative; padding:2px 0px 0px 5px;}
+#popUp span.close{width:15px; height:20px; float:left; position:relative; background:#333; color:#fff; padding:4px 0px 0px 6px; cursor:pointer;}
+#popUpBg{width:100%; height:100%; position:absolute; overflow:hidden; background:rgba(0, 0, 0, 0.7); display:none; border:none; top:0px; left:0px;}
+
+#popUpBody{width:470px; height:230px; float:left; padding:0px 0px 0px 30px; /*background:#F00;*/}
+#popUpBody form{width:440px; height:210px; float:left; padding-top:20px; /*background:#690;*/}
+#popUpBody form label{ width:50px; height:20px; float:left; padding:4px 0px 0px 5px; /* background:#00F; */
+					   border-left:1px solid #ddd; border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
+#popUpBody form input{ width:360px; height:26px; float:left; padding-left:10px;}
+#popUpBody form input.data{ width:344px; height:26px; float:left; padding-left:10px;}
+
+#popUpBody form select{width:370px; height:26px; float:left; padding-left:10px;}
+#popUpBody form textarea{ width:360px; height:200px; float:left; padding:5px 0px 0px 10px; margin-bottom:10px;}
+
+#popUpBody a{width:77px; height:19px; float:left; text-decoration:none; text-align:center; background:#999; margin:15px 15px 0px 0px; padding-top:2px;}
+
+#popUp span#msg{width:470px; height:35px; float:left; padding:5px 0px 0px 30px; font-size:12px; color:#F00; /*background:#FF0;*/}
+/*--- PopUp -*/
+

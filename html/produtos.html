@@ -1,0 +1,29 @@
+<form id="formulario">
+    <table id="minhaTabela" cellpadding="0" cellspacing="0" summary="Tabela Produtos">
+        <thead><tr class='cabecalho'></tr></thead>
+        <tfoot><tr class='rodape'></tr></tfoot>
+        <tbody></tbody>
+    </table>
+</form>
+<div id='popUp'>
+    <h1>Novo Produto</h1>
+    <span class="close" onclick="Produtos.fechaPopUp()">X</span>
+    <div id='popUpBody'>
+        <form id="popUpForm">
+            <label for="codigo">Código</label>
+            <input type="text" class="cod" name="codigo" id="codigo" readonly="readonly" value="*" />
+            <br /><br />
+            <label for="data">Nome</label>
+            <input type="text" name="nome" id="nome" />
+            <br /><br />
+            <label for="titulo">Preço</label>
+            <input type="text" name="preco" id="preco" />
+
+            <a href="#" onclick="Produtos.cadastrar()">Cadastrar</a>
+            <a href="#" onclick="Produtos.atualizar()">Atualizar</a>
+            <a href="#" onclick="Produtos.fechaPopUp()">Cancelar</a>
+        </form>
+    </div>
+    <span id="msg"></span>
+</div>
+<div id='popUpBg' onclick="Produtos.fechaPopUp()"></div>
